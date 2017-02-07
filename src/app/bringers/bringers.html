@@ -1,0 +1,7 @@
+<div class="container full-w-h">
+  <navbar start-date="{{bringers.startDate}}" end-date="'{{bringers.endDate}}'"></navbar>
+  <search-bar></search-bar>
+  <heat-map-button on-create="bringers.mapCreated(map)"></heat-map-button>
+  <tool-bar type="bringers" toolbar-data="bringers.toolbar" on-change="bringers.filterActions()" on-date-change="bringers.filterDate()"></tool-bar>
+  <map on-create="bringers.mapCreated(map)" class="custom-map"> </map>
+</div>
