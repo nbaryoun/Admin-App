@@ -1,0 +1,9 @@
+<div class="container full-w-h">
+  <navbar start-date="{{users.startDate}}" end-date="'{{users.endDate}}'"></navbar>
+  <search-bar></search-bar>
+  <heat-map-button on-create="users.mapCreated(map)"></heat-map-button>
+  <tool-bar type="users" toolbar-data="users.toolbar" on-change="users.filterActions()" on-date-change="users.filterDate()"></tool-bar>
+  <map on-create="users.mapCreated(map)" class="custom-map"> </map>
+</div>
+
+
