@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('marketingMap')
+    .module('Admin-App')
     .factory('randomColor', randomColor);
 
   /** @ngInject */

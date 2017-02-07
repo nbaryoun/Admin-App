@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('marketingMap')
+    .module('Admin-App')
     .directive('map', map); //This directive loads the map on the view
 
 

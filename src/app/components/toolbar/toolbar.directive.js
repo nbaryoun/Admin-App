@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('marketingMap')
+    .module('Admin-App')
     .directive('toolBar', toolBar);
 
   /** @ngInject */

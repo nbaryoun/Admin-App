@@ -6,7 +6,7 @@
     var $timeout;
     var toastr;
 
-    beforeEach(module('marketingMap'));
+    beforeEach(module('Admin-App'));
     beforeEach(inject(function(_$controller_, _$timeout_, _toastr_,sampleData) {
       spyOn(_toastr_, 'info').and.callThrough();
 

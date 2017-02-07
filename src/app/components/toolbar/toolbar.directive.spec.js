@@ -6,7 +6,7 @@
     var el;
 
 
-    beforeEach(module('marketingMap'));
+    beforeEach(module('adminApp'));
     beforeEach(inject(function($compile, $rootScope) { // before the $compile and $rootScope are injected
 
 

@@ -5,7 +5,7 @@
   'use strict';
 
   angular
-    .module('marketingMap')
+    .module('Admin-App')
     .controller('OrderController', OrderController);
 
   /** @ngInject */

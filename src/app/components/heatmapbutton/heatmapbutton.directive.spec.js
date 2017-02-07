@@ -12,7 +12,7 @@
     var el;
     var scope;
 
-    beforeEach(module('marketingMap'));
+    beforeEach(module('Admin-App'));
     beforeEach(inject(function($compile, $rootScope) {
 
       scope = $rootScope.$new();

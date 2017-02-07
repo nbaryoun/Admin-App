@@ -14,7 +14,7 @@
     var scope;
 
 
-    beforeEach(module('marketingMap')); //beforeEach function is called once before each spec in the describe in which it is called
+    beforeEach(module('Admin-App')); //beforeEach function is called once before each spec in the describe in which it is called
     beforeEach(inject(function($compile,$rootScope){
 
       scope = $rootScope.$new();
