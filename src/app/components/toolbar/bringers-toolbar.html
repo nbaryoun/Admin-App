@@ -1,0 +1,7 @@
+<div id="toolbar"class="toolbar-wrapper">
+  Bringers Toolbar
+  <label ng-repeat="action in vm.actions">
+    <input type="checkbox">{{action}}
+  </label><br>
+  <button ng-click="vm.onChange({data: 'Hey Guys check this out'})"></button>
+</div>

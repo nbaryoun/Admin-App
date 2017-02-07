@@ -1,0 +1,23 @@
+<div class="toolbar">
+  <div class="input-group">
+    <label for="fader1">Number of Orders</label>
+    <input type="range" min="0" max="10" value="0" id="fader1" step="1" oninput="NumberofOrderRange(value)">
+    <output for="fader1" id="num_of_orders">0</output>
+  </div>
+  <div class="input-group">
+    <label for="fader2">Money Spent</label>
+    <input type="range" min="0" max="100" value="0" id="fader2" step="1" oninput="MoneySpent(value)">
+    <output for="fader2" id="money_spent">0</output>
+  </div>
+  <script>
+    function NumberofOrderRange(order){
+      document.querySelector('#num_of_orders').value = order;
+    }
+    function MoneySpent(money) {
+      document.querySelector('#money_spent').value = money;
+    }
+  </script>
+  <div class="input-group">
+    <button class="btn btn-warning">Filter Markers</button>
+  </div>
+</div>

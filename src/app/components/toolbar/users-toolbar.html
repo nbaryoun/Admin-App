@@ -1,0 +1,35 @@
+<div id="toolbar"class="toolbar-wrapper">
+  {{vm.toolbarData.Title}}    <!--repeat actions in toolbar array --> <!--console.log when checkbox is clicked-->
+  <div ng-repeat="action in vm.toolbarData.actions" > <!---user action and boolean if visible -->
+    <input title="{{action.name}}CheckBox" type="checkbox" ng-change="vm.onChange()" ng-model="action.visible"/>
+    {{action.name}} | {{action.visible}}
+    <br>
+  </div>
+  <div class="row">
+    <div class="col-md-11">
+      <p class="input-group">
+        <input type="text" class="form-control col-sm-10" uib-datepicker-popup="{{vm.formats[3]}}"
+               ng-model="vm.toolbarData.date.start" is-open="vm.popup1.opened"
+               datepicker-options="vm.dateOptions" ng-required="true" close-text="Close"
+               alt-input-formats="vm.altInputFormats" />
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="vm.open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-11">
+      <p class="input-group">
+        <input type="text" class="form-control" uib-datepicker-popup="{{vm.formats[3]}}"
+               ng-model="vm.toolbarData.date.end" is-open="vm.popup2.opened"
+               datepicker-options="vm.dateOptions" ng-required="true" close-text="Close"
+               alt-input-formats="vm.altInputFormats" />
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="vm.open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+      </p>
+      <button type="submit" class="btn-warning" ng-click="vm.onDateChange()">Filter</button>
+    </div>
+  </div>
+</div>
